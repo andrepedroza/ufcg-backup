@@ -5,4 +5,4 @@ if [ -e /run/secrets/aws-secret-key ]; then
     export AWS_SECRET_ACCESS_KEY=$secret
 fi
 
-/init
+/init || exit 0
